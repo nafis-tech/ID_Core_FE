@@ -18,28 +18,25 @@ class Home extends React.Component {
     render() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', margin:'3vw', backgroundImage: "https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/Screenshot%20(1544).png" }}>
-                    <Image style={{ height: '10vh', width: '20vw', marginLeft:'2vw', marginRight:'10vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/logo.png"}></Image>
-                    <div style={{ display: 'flex', margingLeft:'5vw', fontSize:'10px',  justifyContent: 'space-between'}}>
-                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Cara menggunakan Nova Frelancer?</Button>
-                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Daftar sebagai Frelancer</Button>
-                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'25px', height:'6vh'}} variant="outline-dark">Masuk</Button>
-                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'25px', height:'6vh'}} variant="outline-warning">Diskon</Button>
-                    </div>
-                </div>
-                <h1>HomePages</h1>
                 <div style={styles.div1}>
                     <div style={styles.div1Kiri}>
-                        <h1>We Make Your Job Easier</h1>
-                        <h4 style={{ margin: '6vh' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus soluta neque at! Consequuntur, aut facere possimus, similique accusamus ipsum autem praesentium itaque cum ducimus repudiandae fugit. Sapiente praesentium vel doloremque!</h4>
+                        <Image style={{ height: '8vh', width: '20vw', marginLeft: '5vw', marginTop:'2vh', marginBottom:'20vh' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/logo.png"}></Image>
+                        <Image style={{ marginLeft: '5vw',height: '30vh', width: '40vw'}} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/we_make_your_job.png"}></Image>
+                        <h4 style={{ margin: '6vh' }}> soluta neque at! Consequuntur, aut facere possimus, similique accusamus ipsum autem praesentium itaque cum ducimus repudiandae fugit. Sapiente praesentium vel doloremque!</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo quod, dicta veniam ab quae dolores adipisci perferendis, maiores officiis quidem perspiciatis eos est ex atque. Ut cupiditate distinctio illum!</p>
                         <div>
                             <button>Temukan Freelance</button>
                             <button>Buat job</button>
                         </div>
                     </div>
-                    <div style={styles.div1Kanan}>kanan
-                       <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/Screenshot%20(1544).png"}></Image>
+                    <div style={styles.div1Kanan}>
+                        <div style={{ display: 'flex', margin: '1vw', fontSize: '10px', justifyContent: 'space-between' }}>
+                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '30px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Cara menggunakan Nova Frelancer?</Button>
+                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '30px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Daftar sebagai Frelancer</Button>
+                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '25px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Masuk</Button>
+                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '25px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Diskon</Button>
+                        </div>
+                        <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/pictureNew.png"}></Image>
                     </div>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -83,7 +80,7 @@ class Home extends React.Component {
                 <div style={{ display: 'flex' }}>
                     <div style={{ display: 'flex', flexBasis: '65%', flexDirection: 'column' }}>
                         <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi commodi neque</h2>
-                        <div style={{ display: 'flex', flexDirection: 'column'  }}>
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex' }}>
                                 <div>
                                     <h5>icon + judul 1. cari</h5>
@@ -106,7 +103,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', flexBasis: '35%', backgroundColor:'greenyellow' }}>
+                    <div style={{ display: 'flex', flexBasis: '35%', backgroundColor: 'greenyellow' }}>
                         gambar
                     </div>
                 </div>
@@ -118,7 +115,7 @@ class Home extends React.Component {
                     <h3>Freelance populer dalam Web dna pemograman</h3>
                     <h3>Carosoul - gambar card</h3>
                 </div>
-                <div style={{ display: 'flex', flexDirection:'column' }}>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <h3>Ulasan dari pelanggan</h3>
                     <div style={{ display: 'flex' }}>
                         <h5>Card 1</h5>
@@ -133,7 +130,7 @@ class Home extends React.Component {
                 <div>
                     logo logo
                 </div>
-                <footer style={{ display: 'flex', backgroundColor:'yellow' }}> backgroundColor kuning</footer>
+                <footer style={{ display: 'flex', backgroundColor: 'yellow' }}> backgroundColor kuning</footer>
             </div>
         )
     }
@@ -141,19 +138,22 @@ class Home extends React.Component {
 
 const styles = {
     div1: {
-        backgroundColor: 'salmon',
+        backgroundColor: '#FFC107',
         display: 'flex',
         flexBasis: '50%'
 
     },
     div1Kanan: {
-        backgroundColor: 'green',
+        // backgroundImage: `url("https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/pictureNew.png")`,
+        backgroundColor: '#FFC107',
         display: 'flex',
         flexBasis: '50%',
         flexDirection: 'column',
+        width: '25vw',
+        heihgt: '30vh'
     },
     div1Kiri: {
-        backgroundColor: 'gray',
+        backgroundColor: 'white',
         display: 'flex',
         flexBasis: '50%',
         flexDirection: 'column',
