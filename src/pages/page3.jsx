@@ -1,7 +1,8 @@
 import React from 'react'
 import {
     Card,
-    Button
+    Button,
+    Image
 } from 'react-bootstrap';
 import Axios from 'axios';
 // import { Link } from 'react-router-dom'
@@ -25,74 +26,113 @@ class Page3 extends React.Component {
     render() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <h1>Pages3</h1>
+                <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/navbar.png"}></Image>
                 <div style={{ display: 'flex' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', flexBasis: '20%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flexBasis: '35%' }}>
                         <h4>Filter</h4>
                         <Card>
                             jenis logo
                         </Card>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', flexBasis: '80%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flexBasis: '65%', margin: '3vw' }}>
                         <div>
-                            banner
+                            <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/banner.png"}
+                                style={{ width: '80vw', height: '50vh', border: '1px solid yellow', borderRadius: '13px', padding: '1vw', marginBottom: '5vh' }}></Image>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <h5>pekerjaan yang ditemukan 77 item</h5>
-                            <h4>Halaman 1 dari 7</h4>
+                            <h5>Pekerjaan yang ditemukan {this.state.images.length} item</h5>
+                            <h5>Halaman 1 dari 7</h5>
                         </div>
-                        <div>
-                            {this.state.images.map((item) => {
-                                return (
-                                    <Card.Img style={{width: '10vw', height:'10vh'}} src={item} />
-                                )
-                            })}
+                        <div style={styles.divCard}>
+                            <div >
+                                {this.state.images.map((item) => {
+                                    return (
+                                        <Card.Img style={{
+                                            margin: '1vw', width: '13vw', height: '43vh',
+                                            border: '1px solid #D3E4CD', borderRadius: '12px',
+                                        }}
+                                            src={item} />
+                                    )
+                                })}
+                            </div>
+                            <div>
+                                1233
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <div>kategori terkait</div>
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ display: 'flex' }}>
-                        <Button variant="warning">Logo</Button>
-                        <Button variant="warning">Desaign Web</Button>
-                        <Button variant="warning">infografis</Button>
-                        <Button variant="warning">Baner Online</Button>
+                <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/kategori_terkait_grafis.png"}
+                    style={{ width: '45vw', height: '13vh', justifyContent: 'center', margin: 'auto' }}
+                ></Image>
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '5vw', margin: '1vw', border: '1px solid yellow' }}>
+                    <div style={{ display: 'flex', margin: 'auto', textAlign: 'center' }}>
+                        <Button style={styles.btn} variant="warning">Logo</Button>
+                        <Button style={styles.btn} variant="warning">Desaign Web</Button>
+                        <Button style={styles.btn} variant="warning">infografis</Button>
+                        <Button style={styles.btn} variant="warning">Baner Online</Button>
                     </div>
-                    <div style={{ display: 'flex' }}>
-                        <Button variant="warning">Presentasi</Button>
-                        <Button variant="warning">Postofolio Resume</Button>
-                        <Button variant="warning">UI /UX Design</Button>
-                        <Button variant="warning">Digital Perinting</Button>
+                    <div style={{ display: 'flex', margin: 'auto', textAlign: 'center' }}>
+                        <Button style={styles.btn} variant="warning">Presentasi</Button>
+                        <Button style={styles.btn} variant="warning">Postofolio Resume</Button>
+                        <Button style={styles.btn} variant="warning">UI /UX Design</Button>
+                        <Button style={styles.btn} variant="warning">Digital Perinting</Button>
                     </div>
-                    <div style={{ display: 'flex' }}>
-                        <Button variant="warning">Label kemasan</Button>
-                        <Button variant="warning">Design Kaos & maotif</Button>
-                        <Button variant="warning">Setiker Line</Button>
-                        <Button variant="warning">Gambar Ilustrasi</Button>
+                    <div style={{ display: 'flex', margin: 'auto', textAlign: 'center' }}>
+                        <Button style={styles.btn} variant="warning">Label kemasan</Button>
+                        <Button style={styles.btn} variant="warning">Design Kaos & maotif</Button>
+                        <Button style={styles.btn} variant="warning">Setiker Line</Button>
+                        <Button style={styles.btn} variant="warning">Gambar Ilustrasi</Button>
                     </div>
-                    <div style={{ display: 'flex' }}>
-                        <Button variant="warning">Gambar Potret</Button>
-                        <Button variant="warning">Desain Karakter</Button>
-                        <Button variant="warning">CAD Drawing</Button>
-                        <Button variant="warning">Desain</Button>
+                    <div style={{ display: 'flex', margin: 'auto', textAlign: 'center' }}>
+                        <Button style={styles.btn} variant="warning">Gambar Potret</Button>
+                        <Button style={styles.btn} variant="warning">Desain Karakter</Button>
+                        <Button style={styles.btn} variant="warning">CAD Drawing</Button>
+                        <Button style={styles.btn} variant="warning">Desain</Button>
                     </div>
-                    <Button style={{ width: '10vw' }} variant="warning">Jasa Lainnya</Button>
+                    <div style={{ display: 'flex', margin: 'auto', textAlign: 'center' }}>
+                        <Button style={styles.btn} variant="warning">Jasa Lainnya</Button>
+                    </div>
+
                 </div>
-                <div>
-                    <h5>Jasa Web Design/ Desain Website Profesional</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet repudiandae nulla ipsam animi saepe aliquid quod quasi, explicabo eius sit minima perspiciatis eum asperiores tenetur error quaerat eligendi dolores aut!</p>
+                <div style={{margin: '2vh 10vw', marginTop:'10vh'}}>
+                    <h5 style={{color: '#FFD523', marginLeft:'8px'}}>Jasa Web Design/ Desain Website Profesional</h5>
+                    <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/jasa_web_design.png"}
+                    style={{width: '80vw', height:'40vh'}}></Image>
                 </div>
-                <div>
-                    <h5>Keuntungan menggunakan Jasa Desain Website dan Desain Aplikasi Mobile Profesional diNova Freelancer</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet repudiandae nulla ipsam animi saepe aliquid quod quasi, explicabo eius sit minima perspiciatis eum asperiores tenetur error quaerat eligendi dolores aut!</p>
+                <div style={{margin: '2vh 10vw'}}>
+                    <h5 style={{color: '#FFD523', marginLeft:'8px'}}>Keuntungan menggunakan Jasa Desain Website dan Desain Aplikasi Mobile Profesional diNova Freelancer</h5>
+                    <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/keuntungan_menggunakan_jada.png"} 
+                    style={{width: '83vw', height:'75vh'}}></Image>
                 </div>
-                <div>
-                    <h5>Cara Menggunakan Nova Freelancer</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet repudiandae nulla ipsam animi saepe aliquid quod quasi, explicabo eius sit minima perspiciatis eum asperiores tenetur error quaerat eligendi dolores aut!</p>
+                <div style={{margin: '2vh 10vw', marginBottom:'10vh'}}>
+                    <h5 style={{color: '#FFD523', marginLeft:'8px'}}>Cara Menggunakan Nova Freelancer</h5>
+                    <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/cara_menggunakan_novafreelancer.png"}
+                    style={{width: '80vw', height:'33vh'}}></Image>
+                    
                 </div>
-                <footer style={{ backgroundColor: 'yellow' }} >backgroundColorKUning</footer>
+                <footer style={{ backgroundColor: '#FFC107',height:'33vh' }} ></footer>
             </div>
         )
+    }
+}
+
+const styles = {
+    btn: {
+        margin: '1vw'
+    },
+    divCard: {
+        border: '1px solid #D3E4CD',
+        borderRadius: '12px',
+        paddingLeft: '10vw',
+        padding: '2vh',
+        justifyContent: 'center',
+        // boxShadow: '0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19)'
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    },
+    imageP :{
+        width: '50vw',
+        height:'50vh'
     }
 }
 

@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+    FormControl,
+    InputGroup,
+    Button,
+    Image,
+} from 'react-bootstrap'
 // import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
@@ -12,6 +18,15 @@ class Home extends React.Component {
     render() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', margin:'3vw', backgroundImage: "https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/Screenshot%20(1544).png" }}>
+                    <Image style={{ height: '10vh', width: '20vw', marginLeft:'2vw', marginRight:'10vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/logo.png"}></Image>
+                    <div style={{ display: 'flex', margingLeft:'5vw', fontSize:'10px',  justifyContent: 'space-between'}}>
+                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Cara menggunakan Nova Frelancer?</Button>
+                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Daftar sebagai Frelancer</Button>
+                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'25px', height:'6vh'}} variant="outline-dark">Masuk</Button>
+                        <Button  style={{fontSize:'13px', marginRight:'1vw', borderRadius:'25px', height:'6vh'}} variant="outline-warning">Diskon</Button>
+                    </div>
+                </div>
                 <h1>HomePages</h1>
                 <div style={styles.div1}>
                     <div style={styles.div1Kiri}>
@@ -24,12 +39,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div style={styles.div1Kanan}>kanan
-                        <div style={{ display: 'flex' }}>
-                            <button>Cara menggunakan nova freelancer?</button>
-                            <button>daftar sebagai</button>
-                            <button>masuk</button>
-                            <button>diskon</button>
-                        </div>
+                       <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/Screenshot%20(1544).png"}></Image>
                     </div>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
