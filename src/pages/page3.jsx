@@ -106,7 +106,7 @@ class Page3 extends React.Component {
                     style={{width: '83vw', height:'75vh'}}></Image>
                 </div>
                 <div style={{margin: '2vh 10vw', marginBottom:'10vh'}}>
-                    <h5 style={{color: '#FFD523', marginLeft:'8px'}}>Cara Menggunakan Nova Freelancer</h5>
+                    <h5 id="caramenggunakan" style={{color: '#FFD523', marginLeft:'8px'}}>Cara Menggunakan Nova Freelancer</h5>
                     <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/cara_menggunakan_novafreelancer.png"}
                     style={{width: '80vw', height:'33vh'}}></Image>
                     

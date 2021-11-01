@@ -24,7 +24,7 @@ class Page1 extends React.Component {
                 <div style={{ display: 'flex', justifyContent: 'space-between', margin:'3vw' }}>
                     <Image style={{ height: '10vh', width: '20vw', marginLeft:'2vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/logo.png"}></Image>
                     <div style={{ display: 'flex', margingLeft:'5vw', fontSize:'10px',}}>
-                        <Button  style={{fontSize:'13px', marginRight:'2vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Cara menggunakan Nova Frelancer?</Button>
+                        <Button  style={{fontSize:'13px', marginRight:'2vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning" >Cara menggunakan Nova Frelancer?</Button>
                         <Button  style={{fontSize:'13px', marginRight:'5vw', borderRadius:'30px', height:'6vh'}} variant="outline-warning">Daftar sebagai Frelancer</Button>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ class Page1 extends React.Component {
                             </label>
                             <Link style={{ color: '#03256C', fontSize: '13px', fontWeight: 'bold' }} to="/">Forgot Password?</Link>
                         </div>
-                        <Button style={styles.button}>
+                        <Button href="/page3" style={styles.button}>
                             Login Now
                         </Button>
                         <Button style={styles.button2}>
