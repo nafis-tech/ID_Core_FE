@@ -5,7 +5,7 @@ import {
     Image
 } from 'react-bootstrap';
 import Axios from 'axios';
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Page3 extends React.Component {
     constructor(props) {
