@@ -1,0 +1,1 @@
+export const VIDEO = require('./video.mp4')

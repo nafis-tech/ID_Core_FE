@@ -10,6 +10,7 @@ import {
 } from 'react-bootstrap'
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
+import NavHome from '../component/navbarHome'
 
 class Home extends React.Component {
     constructor(props) {
@@ -33,7 +34,7 @@ class Home extends React.Component {
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <div style={styles.div1}>
                     <div style={styles.div1Kiri}>
-                        <Image style={{ height: '8vh', width: '20vw', marginLeft: '5vw', marginTop: '2vh', marginBottom: '20vh' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/logo.png"}></Image>
+                        <NavHome />
                         <Image style={{ marginLeft: '5vw', height: '30vh', width: '40vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/we_make_your_job.png"}></Image>
                         <Image style={{ marginLeft: '5vw', height: '30vh', width: '40vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/isi_we_make.png"}></Image>
                         <div style={{ margin: '3vw 0 5vh 6vw' }}>
@@ -42,12 +43,6 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div style={styles.div1Kanan}>
-                        <div style={{ display: 'flex', margin: '1vw', fontSize: '10px', justifyContent: 'space-between' }}>
-                            <Button href="/page3" target="_blank" style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '30px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Cara menggunakan Nova Frelancer?</Button>
-                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '30px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Daftar sebagai Frelancer</Button>
-                            <Button href="/page1" style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '25px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Masuk</Button>
-                            <Button style={{ fontSize: '13px', marginRight: '1vw', borderRadius: '25px', height: '6vh', backgroundColor: 'white' }} variant="outline-warning">Diskon</Button>
-                        </div>
                         <Image src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/pictureNew.png"}></Image>
                     </div>
                 </div>
@@ -65,7 +60,7 @@ class Home extends React.Component {
                         <Image style={{ margin: '2vh 0 3vh 5vw', width: '90vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/kenapa_memilih_nova%20(2).png"}></Image>
                     </div>
                     <div style={{ display: 'flex', backgroundColor: 'white' }}>
-                        <Image style={{ margin: '2vh 0 3vh 5vw', width: '90vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/freelance.png"}></Image>
+                        <Image id="langkahmudah" style={{ margin: '2vh 0 3vh 5vw', width: '90vw' }} src={"https://raw.githubusercontent.com/nafis-tech/ID_Core_FE/master/src/images/freelance.png"}></Image>
                     </div>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', }}>
@@ -138,7 +133,8 @@ const styles = {
         flexBasis: '50%',
         flexDirection: 'column',
         width: '25vw',
-        heihgt: '30vh'
+        heihgt: '30vh',
+        paddingTop:'10vh'
     },
     div1Kiri: {
         backgroundColor: 'white',
